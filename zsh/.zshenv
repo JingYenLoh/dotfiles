@@ -1,0 +1,9 @@
+# Exports
+export EDITOR="nvim"
+export LANG='en_US.UTF-8'
+export LC_ALL="en_US.UTF-8"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.npm-global/bin"
+export VISUAL="emacsclient"
