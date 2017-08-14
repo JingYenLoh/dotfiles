@@ -13,6 +13,8 @@
 	ui = true
 [core]
 	editor = nvim
+[grep]
+	linenumber = true
 [push]
 	default = simple
 [user]
