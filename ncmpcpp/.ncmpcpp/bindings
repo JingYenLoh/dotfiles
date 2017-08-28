@@ -33,9 +33,12 @@ def_key "n"
     next_found_item
 def_key "N"
     previous_found_item
+def_key "space"
+ toggle_lyrics_update_on_song_change
 
 # not used but bound
 def_key "J"
     move_sort_order_down
 def_key "K"
     move_sort_order_up
+
