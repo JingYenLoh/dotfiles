@@ -106,6 +106,7 @@ set number
 set relativenumber
 
 " Color settings
+set termguicolors
 colorscheme nord
 syntax enable
 
