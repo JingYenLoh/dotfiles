@@ -4,6 +4,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " NERDTree, because why not?
 Plug 'scrooloose/nerdtree'
 
+" Goyo. Turns out writing drafts in Vim is actually pretty good
+Plug 'junegunn/goyo.vim'
+
 " Auto-pairs
 Plug 'jiangmiao/auto-pairs'
 
