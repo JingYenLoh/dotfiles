@@ -321,9 +321,8 @@ playlist_editor_display_mode = columns
 ## Note: You can specify third character which will
 ## be used to build 'empty' part of progressbar.
 ##
-progressbar_look = =>
-#
-progressbar_boldness = yes
+# progressbar_look = =>
+progressbar_look = ▀▀ 
 #
 ## Available values: database, playlist.
 ##
@@ -357,9 +356,9 @@ header_text_scrolling = yes
 #
 #lines_scrolled = 2
 #
-#follow_now_playing_lyrics = no
+follow_now_playing_lyrics = yes
 #
-#fetch_lyrics_for_current_song_in_background = no
+fetch_lyrics_for_current_song_in_background = yes
 #
 #store_lyrics_in_song_dir = no
 #
@@ -467,7 +466,7 @@ header_text_scrolling = yes
 #
 #search_engine_default_search_mode = 1
 #
-#external_editor = nano
+external_editor = nvim
 #
 ## Note: set to yes if external editor is a console application.
 ##
@@ -513,9 +512,9 @@ colors_enabled = yes
 #
 #main_window_highlight_color = yellow
 #
-#progressbar_color = black
+progressbar_color = black
 #
-#progressbar_elapsed_color = green
+progressbar_elapsed_color = green
 #
 #statusbar_color = default
 #
