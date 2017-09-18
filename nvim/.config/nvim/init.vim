@@ -78,7 +78,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 
 " So apparently I'm using Vue now
-plug 'posva/vim-vue'
+Plug 'posva/vim-vue'
 
 call plug#end()
 """ PLUGINS_END
