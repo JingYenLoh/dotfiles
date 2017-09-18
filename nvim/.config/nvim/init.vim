@@ -77,11 +77,8 @@ Plug 'terryma/vim-multiple-cursors'
 " Easymotion (need to change my thinking too)
 Plug 'easymotion/vim-easymotion'
 
-" Suggested
-"
-" vim-endwise
-"
-"
+" So apparently I'm using Vue now
+plug 'posva/vim-vue'
 
 call plug#end()
 """ PLUGINS_END
