@@ -101,7 +101,7 @@ let g:ctrlp_cmd='CtrlP'
 " Airline settings
 set laststatus=2
 let g:airline_powerline_fonts=1
-let g:airline_theme='nord'
+let g:airline_theme='base16_monokai'
 let g:airline#extensions#tabline#enabled = 1
 
 " Display relative line numbers
@@ -110,7 +110,7 @@ set relativenumber
 
 " Color settings
 set termguicolors
-colorscheme nord
+colorscheme monokai
 syntax enable
 
 " Tab settings
