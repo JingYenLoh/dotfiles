@@ -196,3 +196,12 @@ let g:UltiSnipsEditSplit="vertical"
 " Map autoformat shortcut
 noremap <leader>ed :Autoformat<CR>
 noremap <localleader>g :Denite<CR>
+
+" Mimic Spacemacs buffers
+nmap <leader>bn :bnext<CR>
+nmap <leader>bp :bprevious<CR>
+
+" Mimic Spacemacs quit and save
+nmap <leader>qq :q!<CR>
+nmap <leader>fs :w<CR>
+
