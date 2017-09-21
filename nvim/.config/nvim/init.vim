@@ -80,6 +80,9 @@ Plug 'easymotion/vim-easymotion'
 " So apparently I'm using Vue now
 Plug 'posva/vim-vue'
 
+" .NET Core...
+Plug 'OrangeT/vim-csharp'
+
 call plug#end()
 """ PLUGINS_END
 
