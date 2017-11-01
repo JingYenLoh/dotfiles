@@ -182,6 +182,9 @@ let g:jsx_ext_required=0
 " NERDTree toggle with leader magics
 nmap <leader>ft :NERDTreeToggle<CR>
 
+" NERDTree ignore certain filetypes cos clutter
+let NERDTreeIgnore = [ '\.class$', '\.pyc$' ]
+
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<C-b>"
