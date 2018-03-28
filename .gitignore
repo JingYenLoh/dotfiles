@@ -1,2 +1,7 @@
+.DS_Store
+
+# ncmpcpp error log
 /ncmpcpp/.ncmpcpp/error.log
+
+# netrw litter
 /nvim/.config/nvim/.netrwhist
