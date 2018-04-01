@@ -3,7 +3,7 @@
 ;; Default settings
 (setq-default tab-width 2
               js-indent-level 2
-              indent-tabs-mode 2)
+              indent-tabs-mode nil)
 
 ;; Set variables
 (setq doom-line-numbers-style 'relative
