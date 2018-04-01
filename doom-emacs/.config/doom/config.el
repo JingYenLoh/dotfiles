@@ -8,6 +8,9 @@
 ;; Set variables
 (setq doom-line-numbers-style 'relative
 
+      ;; Respect window managers
+      frame-resize-pixelwise t
+
       ;; Org settings
       org-todo-keywords
       '((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)")
