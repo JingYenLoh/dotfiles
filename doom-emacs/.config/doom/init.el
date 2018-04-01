@@ -5,6 +5,8 @@
 
       +doom-modeline-buffer-file-name-style 'relative-from-project
 
+      +calendar-org-gcal-secret-file (expand-file-name "secret.el")
+
       +org-dir (expand-file-name "~/Dropbox/org/"))
 
 (doom! :feature
