@@ -57,3 +57,25 @@
    (:prefix "o"
      :desc  "APP: Calendar" :n "C" #'+calendar/open-calendar
      :desc  "APP: Agenda"   :n "A" #'org-agenda-list)))
+
+;; org-super-agenda setup
+(def-package! org-super-agenda
+  :commands org-super-agenda-mode
+  :config
+  (setq org-super-agenda-groups
+        '((:log t)
+          (:name "Schedule"
+                 :time-grid t)
+          (:name "Today"
+                 :scheduled today)
+          (:name "Due today"
+                 :deadline today)
+          (:name "Overdue"
+                 :deadline past)
+          (:name "Soon"
+                 :deadline future)
+          (:name "Waiting"
+                 :todo "WAITING"))))
+
+(after! org-agenda
+  (org-super-agenda-mode))
