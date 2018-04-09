@@ -49,6 +49,9 @@
 (after! evil-escape
   (setq evil-escape-key-sequence "fd"))
 
+(after! evil-snipe
+  (setq evil-snipe-scope 'visible))
+
 ;; Keybindings
 (map!
  ;; localleader
