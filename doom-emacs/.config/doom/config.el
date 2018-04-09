@@ -43,3 +43,12 @@
 ;; Use fd for escaping in evil. Doom defaults to jk
 (after! evil-escape
   (setq evil-escape-key-sequence "fd"))
+
+;; Keybindings
+(map!
+ ;; localleader
+ :m "," nil
+ (:leader
+   (:prefix "o"
+     :desc  "APP: Calendar" :n "C" #'+calendar/open-calendar
+     :desc  "APP: Agenda"   :n "A" #'org-agenda-list)))

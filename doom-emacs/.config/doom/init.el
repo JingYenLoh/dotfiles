@@ -3,6 +3,8 @@
 (setq user-full-name    "Jing Yen Loh"
       user-mail-address "lohjingyen@gmail.com"
 
+      doom-localleader-key ","
+
       +doom-modeline-buffer-file-name-style 'relative-from-project
 
       +calendar-org-gcal-secret-file (expand-file-name "secret.el")
