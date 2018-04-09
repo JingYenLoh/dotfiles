@@ -79,3 +79,33 @@
 
 (after! org-agenda
   (org-super-agenda-mode))
+
+;; lang/org
+(add-hook! 'org-mode-hook #'auto-fill-mode)
+(after! org
+  (map! :map evil-org-mode-map
+        (:localleader
+          :n "," #'org-ctrl-c-ctrl-c
+          :n "*" #'org-ctrl-c-star
+          :n "-" #'org-ctrl-c-minus
+          :n "'" #'org-edit-special
+
+          :n "a" #'org-agenda
+
+          :n "A" #'org-attach
+
+          (:desc "toggle" :prefix "t"
+            :n "c" #'org-toggle-checkbox
+            :n "e" #'org-toggle-pretty-entities
+            :n "i" #'org-toggle-inline-images
+            :n "l" #'org-toggle-link-display
+            :n "t" #'org-todo
+            :n "x" #'org-toggle-latex-fragment)
+
+          (:desc "deadline" :prefix "d"
+            :n "d" #'org-deadline
+            :n "s" #'org-schedule
+            :n "t" #'org-time-stamp
+            :n "T" #'org-time-stamp-inactive)
+
+          )))
