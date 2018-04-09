@@ -8,6 +8,11 @@
 ;; Set variables
 (setq doom-line-numbers-style 'relative
 
+      ;; macOS
+      default-frame-alist
+      '((ns-transparent-titlebar . t)
+        (ns-appearance           . 'nil))
+
       ;; Respect window managers
       frame-resize-pixelwise t
 
