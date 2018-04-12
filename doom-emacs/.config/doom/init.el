@@ -7,6 +7,8 @@
       +default-repeat-forward-key ";"
       +default-repeat-backward-key "'"
 
+      ;; Doom styling
+      doom-theme 'doom-dracula
       +doom-modeline-buffer-file-name-style 'relative-from-project
 
       +calendar-org-gcal-secret-file (expand-file-name "secret.el")
