@@ -30,6 +30,8 @@ Plug 'w0rp/ale'
 " Vim colorscheme
 Plug 'crusoexia/vim-monokai'
 Plug 'arcticicestudio/nord-vim'
+Plug 'rakr/vim-one'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Better statusline
 Plug 'vim-airline/vim-airline'
@@ -101,7 +103,7 @@ let g:ctrlp_cmd='CtrlP'
 " Airline settings
 set laststatus=2
 let g:airline_powerline_fonts=1
-let g:airline_theme='minimalist'
+let g:airline_theme='dracula'
 let g:airline#extensions#tabline#enabled = 1
 
 " Display relative line numbers
@@ -110,7 +112,9 @@ set relativenumber
 
 " Color settings
 set termguicolors
-colorscheme monokai
+colorscheme dracula
+" set background=dark
+let g:one_allow_italics=1
 syntax enable
 
 " Tab settings
