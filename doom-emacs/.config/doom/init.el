@@ -4,6 +4,8 @@
       user-mail-address "lohjingyen@gmail.com"
 
       doom-localleader-key ","
+      +default-repeat-forward-key ";"
+      +default-repeat-backward-key "'"
 
       +doom-modeline-buffer-file-name-style 'relative-from-project
 

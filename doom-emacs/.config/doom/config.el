@@ -54,8 +54,6 @@
 
 ;; Keybindings
 (map!
- ;; localleader
- :m "," nil
  (:leader
    (:prefix "o"
      :desc  "APP: Calendar" :n "C" #'+calendar/open-calendar
