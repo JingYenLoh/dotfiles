@@ -27,6 +27,9 @@ Plug 'mxw/vim-jsx'
 " ALE linting
 Plug 'w0rp/ale'
 
+" EasyAlign
+Plug 'junegunn/vim-easy-align'
+
 " Vim colorscheme
 Plug 'crusoexia/vim-monokai'
 Plug 'arcticicestudio/nord-vim'
@@ -154,6 +157,12 @@ set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=syntax
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " Use deoplete
 let g:deoplete#enable_at_startup=1
