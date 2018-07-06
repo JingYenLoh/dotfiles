@@ -192,8 +192,8 @@ augroup END
 " Enable jsx syntax highlighting in .js files
 let g:jsx_ext_required=0
 
-" NERDTree toggle with leader magics
-nmap <leader>ft :NERDTreeToggle<CR>
+" Mimic Doom Emacs toggle tree
+nmap <leader>on :NERDTreeToggle<CR>
 
 " NERDTree ignore certain filetypes cos clutter
 let NERDTreeIgnore = [ '\.class$', '\.pyc$' ]
@@ -213,13 +213,14 @@ let g:UltiSnipsEditSplit="vertical"
 noremap <leader>ed :Autoformat<CR>
 noremap <localleader>g :Denite<CR>
 
-" Mimic Spacemacs buffers
-nmap <leader>bn :bnext<CR>
-nmap <leader>bp :bprevious<CR>
+" Mimic Doom Emacs buffers
+nmap <leader>b[ :bnext<CR>
+nmap <leader>b] :bprevious<CR>
+nmap <leader>bk :bdelete<CR>
 
-" Mimic Spacemacs quit and save
+" Mimic Doom Emacs quit and save
 nmap <leader>qq :q!<CR>
-nmap <leader>fs :w<CR>
+nmap <leader>bs :w<CR>
 
 " Copy to clipboard
 vnoremap  <leader>y  "+y
