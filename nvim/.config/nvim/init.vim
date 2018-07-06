@@ -94,6 +94,9 @@ call plug#end()
 " Use fd for escaping
 imap fd <Esc>
 
+" Work with mouse
+set mouse=a
+
 " Set leader key to space
 let g:mapleader = "\<Space>"
 " Set local leader  key to ;
