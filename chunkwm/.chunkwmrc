@@ -105,4 +105,6 @@ chunkc core::load ffm.so
 chunkc tiling::rule --owner Finder --name Copy --state float
 chunkc tiling::rule --owner \"App Store\" --state float
 chunkc tiling::rule --owner iTerm --name "JingYen" --state float
-chunkc tiling::rule --owner "Emacs.*" --state tile
+chunkc tiling::rule --owner Emacs --except "^$" --subrole AXStandardWindow --state tile
+chunkc tiling::rule --owner Simulator --state float
+chunkc tiling::rule --owner qemu-system-x86_64 --state float
