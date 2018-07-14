@@ -104,9 +104,9 @@ imap fd <Esc>
 set mouse=a
 
 " Set leader key to space
-let g:mapleader = "\<Space>"
-" Set local leader  key to ;
-let g:maplocalleader = ";"
+let g:mapleader="\<Space>"
+" Set local leader  key to ,
+let g:maplocalleader=","
 
 " Ctrl p settings
 let g:ctrlp_map='<c-p>'
@@ -116,7 +116,7 @@ let g:ctrlp_cmd='CtrlP'
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_theme='dracula'
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled=1
 
 " Display relative line numbers
 set number
@@ -178,13 +178,13 @@ let g:deoplete#enable_at_startup=1
 let g:tern_show_signature_in_pum='0'
 
 " Add extra filetypes
-let g:tern#filetypes = ['jsx', 'javascript.jsx', 'vue']
+let g:tern#filetypes=['jsx', 'javascript.jsx', 'vue']
 
 " Keep sign gutter always open
 let g:ale_sign_column_always=1
 
 " Integrate ALE with airline
-let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#ale#enabled=1
 
 " Try to make fasd work
 function! s:fasd_update() abort
@@ -243,7 +243,7 @@ vnoremap <leader>p "+p
 vnoremap <leader>P "+P
 
 " LSP settings
-let g:LanguageClient_serverCommands = {
+let g:LanguageClient_serverCommands={
     \ 'docker': ['docker-langserver', '--stdio'],
     \ 'sh': ['bash-language-server', 'start']
     \ }
