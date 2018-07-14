@@ -88,6 +88,12 @@ Plug 'posva/vim-vue'
 " .NET Core...
 Plug 'OrangeT/vim-csharp'
 
+" LSP powers descend upon me
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
 call plug#end()
 """ PLUGINS_END
 
@@ -235,3 +241,15 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
+
+" LSP settings
+let g:LanguageClient_serverCommands = {
+    \ 'docker': ['docker-langserver', '--stdio'],
+    \ 'sh': ['bash-language-server', 'start']
+    \ }
+
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+" Or map each action separately
+nnoremap <silent> gh :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
