@@ -223,8 +223,8 @@ noremap <leader>ed :Autoformat<CR>
 noremap <localleader>g :Denite<CR>
 
 " Mimic Doom Emacs buffers
-nmap <leader>b[ :bnext<CR>
-nmap <leader>b] :bprevious<CR>
+nmap <leader>b] :bnext<CR>
+nmap <leader>b[ :bprevious<CR>
 nmap <leader>bk :bdelete<CR>
 
 " Mimic Doom Emacs quit and save
