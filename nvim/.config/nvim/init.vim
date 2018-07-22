@@ -114,8 +114,8 @@ let g:ctrlp_cmd='CtrlP'
 
 " Airline settings
 set laststatus=2
-let g:airline_powerline_fonts=1
-let g:airline_theme='dracula'
+let g:airline_powerline_fonts=0
+let g:airline_theme='one'
 let g:airline#extensions#tabline#enabled=1
 
 " Display relative line numbers
@@ -124,8 +124,8 @@ set relativenumber
 
 " Color settings
 set termguicolors
-colorscheme dracula
-" set background=dark
+colorscheme one
+set background=dark
 let g:one_allow_italics=1
 syntax enable
 
