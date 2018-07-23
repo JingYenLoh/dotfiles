@@ -261,3 +261,15 @@ nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 nnoremap <leader>ot :Deol -split<CR>
+
+" Denite
+augroup deniteresize
+  autocmd!
+  autocmd VimResized,VimEnter * call denite#custom#option('default',
+        \'winheight', winheight(0) / 2)
+augroup end
+
+call denite#custom#var('file_rec', 'command',
+  \ ['rg', '--files', '--glob', '!.git', ''])
+nnoremap <C-p> :<C-u>Denite file_rec<CR>
+
