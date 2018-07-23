@@ -208,7 +208,7 @@ augroup END
 let g:jsx_ext_required=0
 
 " Mimic Doom Emacs toggle tree
-nmap <leader>on :NERDTreeToggle<CR>
+nmap <leader>op :NERDTreeToggle<CR>
 
 " NERDTree ignore certain filetypes cos clutter
 let NERDTreeIgnore = [ '\.class$', '\.pyc$' ]
@@ -260,7 +260,7 @@ nnoremap <silent> gh :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
-nnoremap <leader>ot :Deol -split<CR>
+nnoremap <leader>oT :Deol -split<CR>
 
 " Denite
 augroup deniteresize
