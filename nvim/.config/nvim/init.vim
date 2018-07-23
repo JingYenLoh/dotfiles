@@ -1,94 +1,42 @@
 """ PLUGINS_BEGIN
 call plug#begin('~/.local/share/nvim/plugged')
 
-" NERDTree, because why not?
 Plug 'scrooloose/nerdtree'
-
-" Goyo. Turns out writing drafts in Vim is actually pretty good
 Plug 'junegunn/goyo.vim'
-
-" Auto-pairs
 Plug 'jiangmiao/auto-pairs'
-
-" Deoplete (autocomplete)
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Python autocompletion
 Plug 'zchee/deoplete-jedi'
-" Deoplete-ternjs plugin
 Plug 'carlitux/deoplete-ternjs'
-
-" Try out deol shell
 Plug 'Shougo/deol.nvim'
-
-" Javascript & jsx syntax
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-
-" ALE linting
 Plug 'w0rp/ale'
-
-" EasyAlign
 Plug 'junegunn/vim-easy-align'
-
-" Vim colorscheme
 Plug 'crusoexia/vim-monokai'
 Plug 'arcticicestudio/nord-vim'
 Plug 'rakr/vim-one'
 Plug 'dracula/vim', { 'as': 'dracula' }
-
-" Better statusline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-" Denite vim
 Plug 'Shougo/denite.nvim'
-
-" Comment stuff out
 Plug 'tpope/vim-commentary'
-" Repeat plugin commands!
 Plug 'tpope/vim-repeat'
-" Vim surround
 Plug 'tpope/vim-surround'
-" Context aware substituition thing
 Plug 'tpope/tpope-vim-abolish'
-" Modify dates like a pro
 Plug 'tpope/vim-speeddating'
-" Vim wrapper for UNIX commands
 Plug 'tpope/vim-fugitive'
-" Readline bindings in INSERT mode
 Plug 'tpope/vim-rsi'
-" Smart indentation based on history
 Plug 'tpope/vim-sleuth'
-
-" Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-
-" f or F on steroids (Testing out vim-sneak atm)
 Plug 'unblevable/quick-scope'
-
-" Tmux and vim navigation
 Plug 'christoomey/vim-tmux-navigator'
-
-" Jump to any location specified by 2 chars
 Plug 'justinmk/vim-sneak'
-
-" Vim autoformat magics!
 Plug 'Chiel92/vim-autoformat'
-
-" Multiple cursors
 Plug 'terryma/vim-multiple-cursors'
-
-" Easymotion (need to change my thinking too)
 Plug 'easymotion/vim-easymotion'
-
-" So apparently I'm using Vue now
 Plug 'posva/vim-vue'
-
-" .NET Core...
 Plug 'OrangeT/vim-csharp'
-
-" LSP powers descend upon me
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
@@ -108,13 +56,9 @@ let g:mapleader="\<Space>"
 " Set local leader  key to ,
 let g:maplocalleader=","
 
-" Ctrl p settings
-let g:ctrlp_map='<c-p>'
-let g:ctrlp_cmd='CtrlP'
-
 " Airline settings
 set laststatus=2
-let g:airline_powerline_fonts=0
+let g:airline_powerline_fonts=1
 let g:airline_theme='one'
 let g:airline#extensions#tabline#enabled=1
 
@@ -175,6 +119,7 @@ nmap ga <Plug>(EasyAlign)
 
 " Use deoplete
 let g:deoplete#enable_at_startup=1
+let g:deoplete#enable_smart_case=1
 let g:tern_show_signature_in_pum='0'
 
 " Add extra filetypes
@@ -182,27 +127,15 @@ let g:tern#filetypes=['jsx', 'javascript.jsx', 'vue']
 
 " Keep sign gutter always open
 let g:ale_sign_column_always=1
-let g:ale_sign_error = '⨉'
-let g:ale_sign_warning = '⚠'
-let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '']
-let g:ale_lint_on_text_changed = 0
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_enter = 1
+let g:ale_sign_error='⨉'
+let g:ale_sign_warning='⚠'
+let g:ale_statusline_format=['⨉ %d', '⚠ %d', '']
+let g:ale_lint_on_text_changed=0
+let g:ale_lint_on_save=1
+let g:ale_lint_on_enter=1
 
 " Integrate ALE with airline
 let g:airline#extensions#ale#enabled=1
-
-" Try to make fasd work
-function! s:fasd_update() abort
-  if empty(&buftype) || &filetype ==# 'dirvish'
-    call jobstart(['fasd', '-A', expand('%:p')])
-  endif
-endfunction
-
-augroup fasd
-  autocmd!
-  autocmd BufWinEnter,BufFilePost * call s:fasd_update()
-augroup END
 
 " Enable jsx syntax highlighting in .js files
 let g:jsx_ext_required=0
