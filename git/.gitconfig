@@ -20,3 +20,5 @@
 [user]
 	name = Jing Yen Loh
 	email = lohjingyen@gmail.com
+[rerere]
+	enabled = true
