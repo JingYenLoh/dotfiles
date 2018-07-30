@@ -26,7 +26,7 @@
       ;; Org settings
       org-todo-keywords
       '((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)")
-        (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELED(c@/!)"))
+        (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)"))
       org-log-done 'time
       org-log-into-drawer t
       org-log-state-notes-insert-after-drawers nil
@@ -39,7 +39,7 @@
                             (:newline)
                             ("WAITING"  . ?w)
                             ("HOLD"     . ?H)
-                            ("CANCELED" . ?c)))
+                            ("CANCELLED" . ?c)))
       org-fast-tag-selection-single-key nil
       ;; Refiling
       org-refile-use-outline-path 'file
