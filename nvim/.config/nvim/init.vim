@@ -141,7 +141,7 @@ let g:airline#extensions#ale#enabled=1
 let g:jsx_ext_required=0
 
 " Mimic Doom Emacs toggle tree
-nmap <leader>op :NERDTreeToggle<CR>
+nnoremap <silent> <leader>op :NERDTreeToggle<CR>
 
 " NERDTree ignore certain filetypes cos clutter
 let NERDTreeIgnore = [ '\.class$', '\.pyc$' ]
