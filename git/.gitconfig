@@ -8,7 +8,7 @@
 	cp = cherry-pick
 	lg = log --graph
 [credential]
-	helper = cache
+	helper = libsecret
 [color]
 	ui = true
 [core]
