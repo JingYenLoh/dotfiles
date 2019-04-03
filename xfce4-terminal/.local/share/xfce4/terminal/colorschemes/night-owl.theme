@@ -1,0 +1,8 @@
+[Scheme]
+ColorCursor=#D6DEEB
+ColorForeground=#D6DEEB
+ColorBackground=#011627
+TabActivityColor=#7FDBCA
+ColorPalette=#011627;#F78C6C;#ADDB67;#FFCB8B;#82AAFF;#C792EA;#7FDBCA;#BEC5D4;#44596B;#EF5350;#22DA6E;#FFEB95;#5CA7E4;#7E57C2;#21C7A8;#FFFFFF
+ColorBold=#D6DEEB
+ColorBoldUseDefault=FALSE
