@@ -1,0 +1,3 @@
+inoremap fd <Esc>
+set number
+set relativenumber
