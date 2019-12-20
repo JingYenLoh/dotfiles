@@ -24,3 +24,5 @@
 	user = jingyenloh
 [rerere]
 	enabled = true
+[gitlab]
+	user = lohjingyen
