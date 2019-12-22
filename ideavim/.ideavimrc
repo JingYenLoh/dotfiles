@@ -8,3 +8,16 @@ set smartcase
 set surround
 set multiple-cursors
 set commentary
+
+set incsearch
+
+" <SPC> as leader
+let mapleader = " "
+
+" Close current tab
+nnoremap <leader>bk    :action CloseContent<CR>
+vnoremap <leader>bk    <Esc>:action CloseContent<CR>
+
+" Open a new scratch buffer
+nnoremap <leader>x     :action NewScratchBuffer<CR>
+vnoremap <leader>x     <Esc>:action NewScratchBuffer<CR>
